@@ -59,9 +59,10 @@ class SignIn extends React.Component {
 					<div className="buttons">
 						<CustomButton type="submit">Sign In</CustomButton>
 					</div>
-					<div className="account-signup">
-						Don't have an Account? <span>Sign Up</span>
-					</div>
+					<p className="account-signup">
+						Don't have an account?
+						<span onClick={this.props.handleToggle}> Register Here</span>
+					</p>
 					<div>
 						<span className="linebreak">OR</span>
 					</div>
