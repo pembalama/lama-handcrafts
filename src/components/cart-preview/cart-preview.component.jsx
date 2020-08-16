@@ -8,7 +8,7 @@ const CartPreview = () => {
 	return (
 		<div className="cart-dropdown">
 			<div className="cart-items" />
-			<CustomButton>Check Out</CustomButton>
+			<CustomButton>Checkout</CustomButton>
 		</div>
 	);
 };
