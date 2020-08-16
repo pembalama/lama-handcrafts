@@ -7,11 +7,15 @@ import { connect } from 'react-redux';
 
 import { auth } from '../../firebase/firebase.utils';
 
+// import CartItem from '../cart-icon/cart-icon.component';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartPreview from '../cart-preview/cart-preview.component';
+
 const signOut = () => {
 	return auth.signOut();
 };
 
-const Header = ({ currentUser }) => {
+const Header = ({ currentUser, hidden }) => {
 	return (
 		<div className="header">
 			<Link className="logo-container" to="/">
@@ -33,13 +37,16 @@ const Header = ({ currentUser }) => {
 						SIGN IN
 					</Link>
 				)}
+				<CartIcon />
 			</div>
+			{hidden ? null : <CartPreview />}
 		</div>
 	);
 };
 
-const mapStateToProps = state => ({
-	currentUser: state.user.currentUser,
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+	currentUser,
+	hidden,
 });
 
 export default connect(mapStateToProps)(Header);
