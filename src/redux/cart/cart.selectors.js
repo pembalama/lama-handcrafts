@@ -27,3 +27,13 @@ export const selectCartTotal = createSelector([selectCartItems], cartItems => {
 		return acc + cartItem.quantity * cartItem.price;
 	}, 0);
 });
+
+// export const selectCartSubTotal = createSelector(
+// 	[selectCartItems],
+// 	cartItems => {
+// 		return cartItems.map(cartItem => {
+// 			return cartItem.price * cartItem.quantity;
+
+// 		});
+// 	}
+// );

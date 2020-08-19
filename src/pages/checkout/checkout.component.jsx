@@ -1,5 +1,5 @@
 import React from 'react';
-import { connnect, connect } from 'react-redux';
+import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import {
@@ -13,6 +13,7 @@ import './checkout.styles.scss';
 const CheckoutPage = ({ cartItems, grandTotal }) => {
 	return (
 		<div className="checkout-page">
+			<h2>Your Bag</h2>
 			<div className="checkout-header">
 				<div className="header-block">
 					<span>Product</span>
