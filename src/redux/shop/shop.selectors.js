@@ -10,15 +10,17 @@ export const selectCollections = createSelector([selectShop], shop => {
 export const selectCollectionsForPreview = createSelector(
 	[selectCollections],
 	collections => {
-		return Object.keys(collections).map(key => {
-			return collections[key];
-		});
+		return collections
+			? Object.keys(collections).map(key => {
+					return collections[key];
+			  })
+			: [];
 	}
 );
 
 //implementing curried function--> function returning another function; also using lodash.memoize to utilize memoization for the selector function that is being returned
 export const selectCollection = memoize(collectionUrlParam => {
 	return createSelector([selectCollections], collections => {
-		return collections[collectionUrlParam];
+		return collections ? collections[collectionUrlParam] : null;
 	});
 });
