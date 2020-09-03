@@ -24,7 +24,7 @@ const signOut = () => {
 const Header = ({ currentUser, hidden }) => {
 	return (
 		<HeaderContainer>
-			<LogoContainer to="/">LAMA HANDCRAFTS</LogoContainer>
+			<LogoContainer to="/">Momo & Brooklyn</LogoContainer>
 			<OptionsContainer>
 				<OptionLink to="/shop">SHOP</OptionLink>
 				<OptionLink to="/contact">CONTACT</OptionLink>

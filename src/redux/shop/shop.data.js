@@ -1,8 +1,8 @@
 const SHOP_DATA = {
-	hats: {
+	living: {
 		id: 1,
-		title: 'Hats',
-		routeName: 'hats',
+		title: 'Living',
+		routeName: 'living',
 		items: [
 			{
 				id: 1,
@@ -60,10 +60,10 @@ const SHOP_DATA = {
 			},
 		],
 	},
-	shoes: {
+	sleeping: {
 		id: 2,
-		title: 'Shoes',
-		routeName: 'shoes',
+		title: 'Sleeping',
+		routeName: 'sleeping',
 		items: [
 			{
 				id: 10,
@@ -115,10 +115,10 @@ const SHOP_DATA = {
 			},
 		],
 	},
-	jackets: {
+	eating: {
 		id: 3,
-		title: 'Jackets',
-		routeName: 'jackets',
+		title: 'Eating',
+		routeName: 'eating',
 		items: [
 			{
 				id: 18,
@@ -152,10 +152,10 @@ const SHOP_DATA = {
 			},
 		],
 	},
-	womens: {
+	working: {
 		id: 4,
-		title: 'Womens',
-		routeName: 'womens',
+		title: 'Working',
+		routeName: 'working',
 		items: [
 			{
 				id: 23,
@@ -201,10 +201,10 @@ const SHOP_DATA = {
 			},
 		],
 	},
-	mens: {
+	outdoor: {
 		id: 5,
-		title: 'Mens',
-		routeName: 'mens',
+		title: 'Outdoor',
+		routeName: 'outdoor',
 		items: [
 			{
 				id: 30,
