@@ -2,6 +2,15 @@
 	display: flex;
 	flex-direction: column;
 	width: 380px;
+	margin: 0 auto;
+
+	h2 {
+		font-size: 38px;
+	}
+
+	p {
+		text-align: center;
+	}
 
 	.title {
 		margin: 10px 0;
@@ -9,6 +18,8 @@
 
 	.log-in-toggle {
 		font-weight: bold;
+		text-decoration: underline;
+		// border-bottom: 2px solid black;
 
 		&:hover {
 			cursor: pointer;
