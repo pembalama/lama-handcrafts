@@ -69,7 +69,7 @@ class SignIn extends React.Component {
 					</div>
 					<p className="account-signup">
 						Don't have an account?
-						<span onClick={this.props.handleToggle}> Register Here</span>
+						<span onClick={this.props.handleToggle}> Create One Now</span>
 					</p>
 					<div>
 						<span className="linebreak">OR</span>
