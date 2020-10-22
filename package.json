@@ -2,7 +2,7 @@
 	"name": "momoandbrooklyn",
 	"version": "1.0.0",
 	"engines": {
-		"node": "v13.9.0",
+		"node": "13.9.0",
 		"npm": "6.13.7"
 	},
 	"scripts": {
