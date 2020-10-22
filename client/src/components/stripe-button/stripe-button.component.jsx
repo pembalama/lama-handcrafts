@@ -27,7 +27,7 @@ const StripeCheckoutButton = ({ price }) => {
 	return (
 		<StripeCheckout
 			label="Pay Now"
-			name="Lama Handcrafts"
+			name="Momo & Brooklyn"
 			billingAddress
 			shippingAddress
 			// image=''
